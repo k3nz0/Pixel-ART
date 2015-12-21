@@ -9,7 +9,7 @@ Place picture.jpg in the "pics/" folder.
 
 Run : 
 
-python faces.py
+python faces.py picture.jpg
 
 Make sure :
 
