@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-
-=======
 # pixel-ART
->>>>>>> 189476d76365c2949edd1b97f47e1e531dac22ec
 
 Pixel-ART your friends' faces.
 
@@ -15,9 +11,10 @@ Run :
 
 python faces.py
 
-Make sure : 
-	+ picture.jpg exists in your "pics/" folder.
- 	+ You have reading and writing permissions in "pics/" folder.
+Make sure :
+
+- picture.jpg exists in your "pics/" folder.
+- You have reading and writing permissions in "pics/" folder.
 
 You'll find the result in your "pics/tmp_picture.jpg" file.
 
