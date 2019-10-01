@@ -1,4 +1,4 @@
-# pixel-ART
+# Pixel-ART
 
 Pixel-ART simply lets you pixel art your face and optionally add random fancy eyes on it. 
 
