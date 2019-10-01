@@ -2,12 +2,13 @@
 
 Pixel-ART simply lets you pixel art your face and optionally add random fancy eyes on it. 
 
+![Pixel-ARTed](pics/pixelized.gif)
 
 # Requirements 
 In order to run the script these python modules should be installed.
 
 - OpenCV for python  ``` pip install opencv-python ``` 
-- Image for python ``` pip install Image ```
+- PIL for python ``` pip install pillow ```
 
 
 # Usage :
@@ -16,7 +17,10 @@ Place picture.jpg in the "pics/" folder.
 
 Run : 
 
+```
 python faces.py picture.jpg
+```
+
 
 Make sure :
 
@@ -28,7 +32,9 @@ You'll find the result in your "pics/tmp_picture.jpg" file.
  
 If you want to add awesome eyes to your picture just run :
 
+``` 
 python faces.py picture.jpg eye.png
+```
 
 
 # Quick description of the algorithm:  
