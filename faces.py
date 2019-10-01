@@ -1,8 +1,7 @@
 import numpy as np
 import cv2
-import Image
+from PIL import Image
 from random import *
-from func import *
 import sys
 
 # ! ADJUST GRID PIXELS
@@ -14,6 +13,42 @@ if(len(sys.argv) != 2 and len(sys.argv) != 3):
 	print("\npython faces.py picture.jpg eye.png\n\n")
 	print("Try again !")
 	exit(0)
+
+
+def twoMaxs(lnp):
+	"""
+		Return 0-based index of the two max values
+	"""
+	index1 = 0
+	index2 = 0
+	cnt = 0
+	maxArea = 0
+	maxArea2 = 0
+	for (ex, ey, ew, eh) in lnp:
+		if(ew * eh >= maxArea):
+			index1 = cnt
+			maxArea = ew * eh
+		cnt += 1
+	
+
+	cnt = 0
+	for (ex, ey, ew, eh) in lnp:
+		if(index1 == cnt):
+			cnt += 1
+			continue
+		if(ew * eh >= maxArea2):
+			index2 = cnt
+			maxArea2 = ew * eh
+		cnt +=1
+	
+	return (index1, index2)
+
+def abs(x):
+	if(x >= 0):
+		return x
+	else:
+		return -x
+
 
 fName = sys.argv[1]
 dirFile = "pics/"
@@ -116,7 +151,7 @@ for k in range(len(eyeData)):
 
 
 
-img = Image.new( 'RGB', (width, height), "white") # Because white is good
+img = Image.new( 'RGB', (width, height), "white") 
 pixels = img.load()
 
 currEye = 0

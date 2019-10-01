@@ -1,6 +1,13 @@
 # pixel-ART
 
-Pixel-ART your friends' faces.
+Pixel-ART simply lets you pixel art your face and optionally add random fancy eyes on it. 
+
+
+# Requirements 
+In order to run the script these python modules should be installed.
+
+- OpenCV for python  ``` pip install opencv-python ``` 
+- Image for python ``` pip install Image ```
 
 
 # Usage :
@@ -28,8 +35,7 @@ python faces.py picture.jpg eye.png
 
 The technique used to pixel art faces is simple and yet quite effective.
 
-We colored each grid of N x N pixels with the same color. (N can be changed in faces.py)
-
+We colorized each grid of (N, N) pixels with the same color. (N = 20 by default and can be changed in faces.py)
 
 For face and eyes detection we used the great OpenCV library.
 
@@ -43,4 +49,9 @@ too small by the script.
 
 Have fun Pixel-Arting your friends' faces.
 
-More stuff can be found on k3nz0.com
+# Perspectives
+
+* Draw image picture with text (might not work with colorful pictures...)
+
+
+More stuff can be found on http://k3nz0.github.io/
